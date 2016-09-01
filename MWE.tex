@@ -1,0 +1,55 @@
+%% pdflatex MWE
+%% biber MWE
+%% pdflatex MWE
+%% pdflatex MWE
+\documentclass[11pt,letterpaper,roman]{moderncv}       
+
+\moderncvstyle{classic}
+\moderncvcolor{blue} 
+\renewcommand{\rmdefault}{ppl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\name{Miguel}{Velez}
+
+\usepackage[maxbibnames=99,defernumbers=true,isbn=false,doi=false,url=false,sorting=none,backend=biber,style=numeric]{biblatex}
+  
+\AtDataInput{%
+  \csnumgdef{entrycount:\therefsection:\thefield{entrytype}}{%
+    \csuse{entrycount:\therefsection:\thefield{entrytype}}+1}}
+    
+\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}    
+\newrobustcmd*{\mkbibdesc}[1]{%
+  \number\numexpr\csuse{entrycount:\therefsection:\thefield{entrytype}}+1-#1\relax}
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{% label format from numeric.bbx
+        \printfield{labelprefix}%
+        \printfield{labelnumber}}}
+     {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
+      \setlength{\labelwidth}{\hintscolumnwidth}%
+      \setlength{\labelsep}{\separatorcolumnwidth}%
+      \leftmargin\labelwidth%
+      \advance\leftmargin\labelsep}%
+      \sloppy\clubpenalty4000\widowpenalty4000}
+  {\endlist}
+  {\item}  
+  
+\addbibresource{bibliography.bib}  
+
+\begin{document}
+\makecvtitle
+
+\section{Publications}
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Refereed Journal Articles},type=article,resetnumbers=true]
+\printbibliography[heading=subbibliography,title={Refereed Conference Publications},type=inproceedings,resetnumbers=true]
+\nocite{VS:IUST16,VS:CCSC15,VS:MSRP15,V:SUMMA15,VGS:IUST14}
+\printbibliography[heading=subbibliography,title={Miscellaneous},
+type=misc,resetnumbers=true]
+                
+\end{document}
