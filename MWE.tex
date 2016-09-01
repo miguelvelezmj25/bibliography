@@ -15,7 +15,7 @@
 
 \name{Miguel}{Velez}
 
-\usepackage[maxbibnames=99,defernumbers=true,isbn=false,doi=false,url=false,sorting=none,backend=biber,style=numeric]{biblatex}
+\usepackage[maxbibnames=99,defernumbers=true,isbn=false,doi=false,url=false,sorting=nyt,backend=biber,style=numeric]{biblatex}
   
 \AtDataInput{%
   \csnumgdef{entrycount:\therefsection:\thefield{entrytype}}{%
@@ -48,7 +48,7 @@
 \nocite{*}
 \printbibliography[heading=subbibliography,title={Refereed Journal Articles},type=article,resetnumbers=true]
 \printbibliography[heading=subbibliography,title={Refereed Conference Publications},type=inproceedings,resetnumbers=true]
-\nocite{VS:IUST16,VS:CCSC15,VS:MSRP15,V:SUMMA15,VGS:IUST14}
+\printbibliography[heading=subbibliography,title={Books},type=book,resetnumbers=true]
 \printbibliography[heading=subbibliography,title={Miscellaneous},
 type=misc,resetnumbers=true]
                 
