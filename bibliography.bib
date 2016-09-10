@@ -2,7 +2,11 @@
 @String{ICSE = "Proc.\ Int'l Conf.\ Software Engineering (ICSE)"}
 @String{OOPSLA = "Proc.\ Int'l Conf.\ Object-Oriented Programming, Systems, Languages and Applications (OOPSLA)"}
 
-% TODO
+% Conferences
+@String{ICRS = "Proceedings of the International Conference on Reliable Software"}
+@String{FOSE = "Proceedings of the on Future of Software Engineering"}
+
+% Journals
 @String{CACM = "Commun.\ ACM"}
 @String{TSE  = "IEEE Trans.\ Softw.\ Eng. (TSE)"}
 @String{SIGPLANNOT = "SIGPLAN Notices"}
@@ -19,6 +23,20 @@
 @String{ENHI = "Elsevier North-Holland, Inc."}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% JOURNAL ARTICLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{DK:TSE76, 
+ author={DeRemer, Frank and Kron, Hans}, 
+ journal=TSE, 
+ title={Programming-in-the-Large Versus Programming-in-the-Small}, 
+ year={1976}, 
+ volume={SE-2}, 
+ number={2}, 
+ pages={80-86}, 
+ keywords={Accessibility;external name;information hiding;linking;module interconnection language;project management tool;protection;scope of definition;system hierarchy;virtual machine;visibility;Automatic programming;Computer languages;Disk recording;Helium;Joining processes;LAN interconnection;Program processors;Project management;Protection;Writing;Accessibility;external name;information hiding;linking;module interconnection language;project management tool;protection;scope of definition;system hierarchy;virtual machine;visibility}, 
+ doi={10.1109/TSE.1976.233534}, 
+ ISSN={0098-5589}, 
+ month={June},
+}
 
 @article{SNSA:SIGPLANNOT11,
  author = {Sunshine, Joshua and Naden, Karl and Stork, Sven and Aldrich, Jonathan and Tanter, \'{E}ric},
@@ -120,12 +138,49 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@inproceedings{G:FOSE14,
+ author = {Garlan, David},
+ title = {Software Architecture: A Travelogue},
+ booktitle = FOSE,
+ series = {FOSE 2014},
+ year = {2014},
+ month = {6},
+ isbn = {978-1-4503-2865-4},
+ location = {Hyderabad, India},
+ pages = {29--39},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2593882.2593886},
+ doi = {10.1145/2593882.2593886},
+ acmid = {2593886},
+ publisher = ACM,
+ address = ACMAddr,
+ keywords = {Software architecture, architecture and agility, architecture description languages, architecture styles, architecture trends, software frame-works, software product lines},
+}
+
+@inproceedings{DK:ICRS75,
+ author = {DeRemer, Frank and Kron, Hans},
+ title = {Programming-in-the Large Versus Programming-in-the-small},
+ booktitle = {Proceedings of the International Conference on Reliable Software},
+ year = {1975},
+ month = {4},
+ location = {Los Angeles, California},
+ pages = {114--121},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/800027.808431},
+ doi = {10.1145/800027.808431},
+ acmid = {808431},
+ publisher = ACM,
+ address = ACMAddr,
+ keywords = {Accessibility, External name, Information hiding, Linking, Module interconnection language, Project management tool., Protection, Scope of definition, System hierarchy, Virtual machine, Visibility},
+}
+
 @inproceedings{SNSA:OOPSLA11,
  author = {Sunshine, Joshua and Naden, Karl and Stork, Sven and Aldrich, Jonathan and Tanter, \'{E}ric},
  title = {First-class State Change in Plaid},
  booktitle = OOPSLA,
  series = {OOPSLA '11},
  year = {2011},
+ month = {10},
  isbn = {978-1-4503-0940-0},
  location = {Portland, Oregon, USA},
  pages = {713--732},
@@ -166,6 +221,17 @@ Column-Based Metadata},
  publisher = {Addison-Wesley Longman Publishing Co., Inc.},
  address = {Boston, MA, USA},
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TECHNICAL REPORT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@report{GS:CMU94,
+author = {Garlan, David and Shaw, Mary},
+title = {An Introduction to Software Architecture},
+type = {Technical Report CMU-CS-94-166},
+institution = {CMU},
+year = {1994},
+month = {January},
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISCELLANEOUS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 @misc{VS:IUST16,
