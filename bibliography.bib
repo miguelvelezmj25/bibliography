@@ -11,6 +11,7 @@
 @String{TSE  = "IEEE Trans.\ Softw.\ Eng. (TSE)"}
 @String{SIGPLANNOT = "SIGPLAN Notices"}
 @String{SCP = "Sci. Comput. Program."}
+@String{IEEESoftware	= "IEEE Softw."}
 
 % Addresses
 @String{ACMAddr  = "New York, NY, USA"}
@@ -21,8 +22,28 @@
 @String{ACM = "ACM"}
 @String{ACMPress = "ACM Press"}
 @String{ENHI = "Elsevier North-Holland, Inc."}
+@String{IEEECSP = "IEEE Computer Society Press"}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% JOURNAL ARTICLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{MRZWWW:IEEESoftware05,
+ author = {Maranzano, Joseph F. and Rozsypal, Sandra A. and Zimmerman, Gus H. and Warnken, Guy W. and Wirth, Patricia E. and Weiss, David M.},
+ title = {Architecture Reviews: Practice and Experience},
+ journal = IEEESoftw.,
+ issue_date = {March 2005},
+ volume = {22},
+ number = {2},
+ month = mar,
+ year = {2005},
+ issn = {0740-7459},
+ pages = {34--43},
+ numpages = {10},
+ url = {http://dx.doi.org/10.1109/MS.2005.28},
+ doi = {10.1109/MS.2005.28},
+ acmid = {1053649},
+ publisher = IEEECSP,
+ address = IEEEAddr,
+ keywords = {software architecture, software architecture, software review, software evaluation, software evaluation, software review},
+}
 
 @article{DK:TSE76, 
  author={DeRemer, Frank and Kron, Hans}, 
@@ -132,11 +153,27 @@
  url = {http://dx.doi.org/10.1109/2.607045},
  doi = {10.1109/2.607045},
  acmid = {620775},
- publisher = {IEEE Computer Society Press},
+ publisher = IEEECSP,
  address = IEEEAddr
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{GS:SCS06,
+ author = {Garlan, David and Schmerl, Bradley},
+ title = {Architecture-driven Modelling and Analysis},
+ booktitle = {Proceedings of the Eleventh Australian Workshop on Safety Critical Systems and Software - Volume 69},
+ series = {SCS '06},
+ year = {2006},
+ isbn = {1-920-68250-3},
+ location = {Melbourne, Australia},
+ pages = {3--17},
+ numpages = {15},
+ url = {http://dl.acm.org/citation.cfm?id=1274236.1274238},
+ acmid = {1274238},
+ publisher = {Australian Computer Society, Inc.},
+ address = {Darlinghurst, Australia, Australia},
+ keywords = {architecture analysis, software architecture},
+}
 
 @inproceedings{G:FOSE14,
  author = {Garlan, David},
@@ -213,14 +250,21 @@ Column-Based Metadata},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BOOKS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@book{SG:SAPED,
+@book{CGBSNIL:DSA02,
+  title={Documenting Software Architectures: Views and Beyond},
+  author={Clements, Paul and Garlan, David and Bass, Len and Stafford, Judith and Nord, Robert and Ivers, James and Little, Reed},
+  year={2002},
+  publisher={Pearson Education},
+}
+
+@book{SG:SAPED96,
  author = {Shaw, Mary and Garlan, David},
  title = {Software Architecture: Perspectives on an Emerging Discipline},
  year = {1996},
  isbn = {0-13-182957-2},
  publisher = {Prentice-Hall, Inc.},
  address = {Upper Saddle River, NJ, USA},
-} 
+}
 
 @book{GHJV:DPEROS95,
  author = {Gamma, Erich and Helm, Richard and Johnson, Ralph and Vlissides, John},
@@ -232,13 +276,22 @@ Column-Based Metadata},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TECHNICAL REPORT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@techreport{KKC:CMU00,
+ title={ATAM: Method for Architecture Evaluation},
+ author={Kazman, Rick and Klein, Mark and Clements, Paul},
+ year={2000},
+ number={CMU/SEI-2000-TR-004},
+ institution={Software Engineering Institute, Carnegie Mellon University},
+ address={Pittsburgh, PA},
+ url={http://resources.sei.cmu.edu/library/asset-view.cfm?AssetID=5177} }
+
 @report{GS:CMU94,
-author = {Garlan, David and Shaw, Mary},
-title = {An Introduction to Software Architecture},
-type = {Technical Report CMU-CS-94-166},
-institution = {CMU},
-year = {1994},
-month = {January},
+ author = {Garlan, David and Shaw, Mary},
+ title = {An Introduction to Software Architecture},
+ type = {Technical Report CMU-CS-94-166},
+ institution = {CMU},
+ year = {1994},
+ month = {January},
 }
 
 
