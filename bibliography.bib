@@ -4,7 +4,8 @@
 
 % Conferences
 @String{ICRS = "Proceedings of the International Conference on Reliable Software"}
-@String{FOSE = "Proceedings of the on Future of Software Engineering"}
+@String{FOSE = "Proceedings of the on Future of Software Engineering (FOSE)"}
+@String{ICCPS = "International Conference on Cyber-Physical Systems (ICCPS)"}
 
 % Journals
 @String{CACM = "Commun.\ ACM"}
@@ -12,23 +13,109 @@
 @String{SIGPLANNOT = "SIGPLAN Notices"}
 @String{SCP = "Sci. Comput. Program."}
 @String{IEEESoftware	= "IEEE Softw."}
+@String{SoSyM = "Softw. Syst. Model. (SoSyM)"}
 
 % Addresses
 @String{ACMAddr  = "New York, NY, USA"}
 @String{IEEEAddr = "Los Alamitos, CA, USA"}
 @String{ENHIAddr = "Amsterdam, The Netherlands"}
+@String{IEEEPressAddr = "Piscataway, NJ, USA"}
+@String{SVNJAddr = "Secaucus, NJ, USA"}
+@String{SVBAddr = "Berlin/Heidelberg, Germany"}
 
 % Publishers
 @String{ACM = "ACM"}
+@String{IEEEPress = "IEEE Press"}
 @String{ACMPress = "ACM Press"}
 @String{ENHI = "Elsevier North-Holland, Inc."}
 @String{IEEECSP = "IEEE Computer Society Press"}
+@String{SVNY = "Springer-Verlag New York, Inc."}
+String{SV = "Springer-Verlag"}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% JOURNAL ARTICLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{BGS:SoSyM14,
+ author = {Barnes, Jeffrey M. and Garlan, David and Schmerl, Bradley},
+ title = {Evolution Styles: Foundations and Models for Software Architecture Evolution},
+ journal = SoSyM,
+ issue_date = {May 2014},
+ volume = {13},
+ number = {2},
+ month = may,
+ year = {2014},
+ issn = {1619-1366},
+ pages = {649--678},
+ numpages = {30},
+ url = {http://dx.doi.org/10.1007/s10270-012-0301-9},
+ doi = {10.1007/s10270-012-0301-9},
+ acmid = {2617332},
+ publisher = SVNY,
+ address = {SVNJAddr},
+ keywords = {Software architecture},
+} 
+
+@article{SAGKY:TSE06,
+ author = {Schmerl, Bradley and Aldrich, Jonathan and Garlan, David and Kazman, Rick and Yan, Hong},
+ title = {Discovering Architectures from Running Systems},
+ journal = TSE,
+ issue_date = {July 2006},
+ volume = {32},
+ number = {7},
+ month = jul,
+ year = {2006},
+ issn = {0098-5589},
+ pages = {454--466},
+ numpages = {13},
+ url = {http://dx.doi.org/10.1109/TSE.2006.66},
+ doi = {10.1109/TSE.2006.66},
+ acmid = {1248748},
+ publisher = IEEEPress,
+ address = IEEEPressAddr,
+ keywords = {Software architecture discovery, Software architecture discovery, reverse engineering, architecture design tools and analyses., architecture design tools and analyses., reverse engineering},
+} 
+
+@article{GCSHSS:C04,
+ author = {Garlan, David and Cheng, Shang-Wen and Huang, An-Cheng and Schmerl, Bradley and Steenkiste, Peter},
+ title = {Rainbow: Architecture-Based Self-Adaptation with Reusable Infrastructure},
+ journal = {Computer},
+ issue_date = {October 2004},
+ volume = {37},
+ number = {10},
+ month = oct,
+ year = {2004},
+ issn = {0018-9162},
+ pages = {46--54},
+ numpages = {9},
+ url = {http://dx.doi.org/10.1109/MC.2004.175},
+ doi = {10.1109/MC.2004.175},
+ acmid = {1032348},
+ publisher = IEEECSP,
+ address = IEEEAddr,
+} 
+
+@article{GAO:IEEESoftware95,
+ author = {Garlan, David and Allen, Robert and Ockerbloom, John},
+ title = {Architectural Mismatch: Why Reuse Is So Hard},
+ journal = IEEESoftware,
+ issue_date = {November 1995},
+ volume = {12},
+ number = {6},
+ month = nov,
+ year = {1995},
+ issn = {0740-7459},
+ pages = {17--26},
+ numpages = {10},
+ url = {http://dx.doi.org/10.1109/52.469757},
+ doi = {10.1109/52.469757},
+ acmid = {625526},
+ publisher = IEEECSP,
+ address = IEEEAddr,
+} 
+
+
 @article{MRZWWW:IEEESoftware05,
  author = {Maranzano, Joseph F. and Rozsypal, Sandra A. and Zimmerman, Gus H. and Warnken, Guy W. and Wirth, Patricia E. and Weiss, David M.},
  title = {Architecture Reviews: Practice and Experience},
- journal = IEEESoftw.,
+ journal = IEEESoftware,
  issue_date = {March 2005},
  volume = {22},
  number = {2},
@@ -133,8 +220,8 @@
  url = {http://dx.doi.org/10.1109/TSE.1976.233830},
  doi = {10.1109/TSE.1976.233830},
  acmid = {1313593},
- publisher = {IEEE Press},
- address = {Piscataway, NJ, USA},
+ publisher = IEEEPress,
+ address = IEEEPressAddr,
  keywords = {Abstract data types, abstraction and representation, assertion, correctness, information hiding, levels of abstraction, modular decomposition, program specifications, program verification, programming languages, programming methodology, structured programming, structured programming, Abstract data types, abstraction and representation, assertion, correctness, information hiding, levels of abstraction, modular decomposition, program specifications, program verification, programming languages, programming methodology},
 }
 
@@ -154,15 +241,65 @@
  doi = {10.1109/2.607045},
  acmid = {620775},
  publisher = IEEECSP,
- address = IEEEAddr
+ address = IEEEAddr,
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{GDRS: ,
+ author = {Garlan, David and Dwivedi, Vishal and Ruchkin, Ivan and Schmerl, Bradley},
+ title = {Foundations and Tools for End-user Architecting},
+ booktitle = {Proceedings of the Conference on Large-Scale Complex IT Systems: Development, Operation and Management},
+ year = {2012},
+ isbn = {978-3-642-34058-1},
+ location = {Oxford, UK},
+ pages = {157--182},
+ numpages = {26},
+ url = {http://dx.doi.org/10.1007/978-3-642-34059-8_9},
+ doi = {10.1007/978-3-642-34059-8_9},
+ acmid = {2427599},
+ publisher = SV,
+ address = SVBAddr,
+ keywords = {end-user architecting, end-user architecture, end-user programming, software architecture, software composition, software development tools},
+} 
+
+@inproceedings{BKGS:ICCPS11, 
+ author = {Bhave, Ajinkya and Krogh, Bruce and Garlan, David and Schmerl, Bradley}, 
+ booktitle = ICCPS, 
+ title = {View Consistency in Architectures for Cyber-Physical Systems}, 
+ year = {2011}, 
+ pages = {151-160}, 
+ keywords = {aircraft;formal verification;graph theory;software architecture;base architecture;connectivity graph;cyber physical system;graph matching;heterogeneous model;model based development;model checking;quadrotor air vehicle;Analytical models;Barium;Computational modeling;Computer architecture;Connectors;Encapsulation;Software;cyber-physical systems;graph morphism;multi-domain modeling;system architecture;view consistency}, 
+ doi = {10.1109/ICCPS.2011.17}, 
+ month = {April},
+ location = {Chicago, IL, USA},
+ publisher = IEEECSP,
+ address = IEEEAddr,
+}
+
+@inproceedings{AG:ICSE94,
+ author = {Allen, Robert and Garlan, David},
+ title = {Formalizing Architectural Connection},
+ booktitle = ICSE,
+% series = {ICSE '94},
+ year = {1994},
+ month = {5},
+ isbn = {0-8186-5855-X},
+ location = {Sorrento, Italy},
+ pages = {71--80},
+ numpages = {10},
+ url = {http://dl.acm.org/citation.cfm?id=257734.257745},
+ acmid = {257745},
+ publisher = IEEECSP,
+ address = IEEEAddr,
+} 
+
+
 @inproceedings{GS:SCS06,
  author = {Garlan, David and Schmerl, Bradley},
  title = {Architecture-driven Modelling and Analysis},
- booktitle = {Proceedings of the Eleventh Australian Workshop on Safety Critical Systems and Software - Volume 69},
- series = {SCS '06},
+ booktitle = {Proceedings on Safety Critical Systems and Software (SCS)},
+% series = {SCS '06},
+ month = {8}, 
  year = {2006},
  isbn = {1-920-68250-3},
  location = {Melbourne, Australia},
@@ -179,7 +316,7 @@
  author = {Garlan, David},
  title = {Software Architecture: A Travelogue},
  booktitle = FOSE,
- series = {FOSE 2014},
+% series = {FOSE 2014},
  year = {2014},
  month = {6},
  isbn = {978-1-4503-2865-4},
@@ -200,7 +337,7 @@
  booktitle = {Proceedings of the International Conference on Reliable Software},
  year = {1975},
  month = {4},
- location = {Los Angeles, California},
+ location = {Los Angeles, CA, USA},
  pages = {114--121},
  numpages = {8},
  url = {http://doi.acm.org/10.1145/800027.808431},
@@ -215,11 +352,11 @@
  author = {Sunshine, Joshua and Naden, Karl and Stork, Sven and Aldrich, Jonathan and Tanter, \'{E}ric},
  title = {First-class State Change in Plaid},
  booktitle = OOPSLA,
- series = {OOPSLA '11},
+% series = {OOPSLA '11},
  year = {2011},
  month = {10},
  isbn = {978-1-4503-0940-0},
- location = {Portland, Oregon, USA},
+ location = {Portland, OR, USA},
  pages = {713--732},
  numpages = {20},
  url = {http://doi.acm.org/10.1145/2048066.2048122},
@@ -232,7 +369,7 @@
 
 @inproceedings{KK:WSR16,
  author={Prasad Kawthekar and Christian K{\"a}stner},
- location={New York, NY},
+ location={New York, NY, USA},
  year={2016},
  booktitle={Proceedings of the IJCAI Workshop on Autonomous Mobile Service Robots (WSR)},
  title={Sensitivity Analysis For Building Evolving \& Adaptive Robotic Software},
@@ -250,9 +387,9 @@ Column-Based Metadata},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BOOKS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@book{CGBSNIL:DSA02,
+@book{CBBGILMNS:DSA02,
   title={Documenting Software Architectures: Views and Beyond},
-  author={Clements, Paul and Garlan, David and Bass, Len and Stafford, Judith and Nord, Robert and Ivers, James and Little, Reed},
+  author={Clements, Paul and Felix, Bachmann and Bass, Len and Garlan, David and Ivers, James and Little, Reed and Merson, Paulo  and Nord, Robert and Stafford, Judith},
   year={2002},
   publisher={Pearson Education},
 }

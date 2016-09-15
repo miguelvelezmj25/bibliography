@@ -15,7 +15,16 @@
 
 \name{Miguel}{Velez}
 
-\usepackage[maxbibnames=99,defernumbers=true,isbn=false,doi=false,url=false,sorting=ymdnt,backend=biber,style=numeric]{biblatex}
+\usepackage[maxbibnames=99,
+			defernumbers=true,
+			isbn=false,
+			doi=false,
+			url=false,
+			sorting=ymdnt,
+			backend=biber,
+			style=numeric]{biblatex}
+
+\renewcommand*{\intitlepunct}{\space}
 
 \DeclareSortingScheme{ymdnt}{
   \sort{
