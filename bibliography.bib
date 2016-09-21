@@ -22,6 +22,7 @@
 @String{IEEEPressAddr = "Piscataway, NJ, USA"}
 @String{SVNJAddr = "Secaucus, NJ, USA"}
 @String{SVBAddr = "Berlin/Heidelberg, Germany"}
+@String{SVNYAddr  = "New York, NY, USA"}
 
 % Publishers
 @String{ACM = "ACM"}
@@ -33,29 +34,40 @@
 String{SV = "Springer-Verlag"}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BOOKS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@book{SBN:CS87,
+ title={Computer structures: principles and examples},
+ author={Siewiorek, Daniel P. and Bell, C. Gordon and Newell, Allen},
+ chapter = {2, Levels and Abstraction},  
+ isbn={9780070573024},
+ series={McGraw-Hill computer science series},
+ url={https://books.google.com/books?id=CdlQAAAAMAAJ},
+ year={1987},
+ publisher={McGraw-Hill}
+}
+
 @book{BW:TAOSA2,
-  title={The Architecture of Open Source Applications, Volume II},
-  author={Brown, Amy and Wilson, Greg},
-  number={v. 2},
-  series={The Architecture of Open Source Applications},
-  year={2012},
-  publisher={Kristian Hermansen}
+ title={The Architecture of Open Source Applications, Volume II},
+ author={Brown, Amy and Wilson, Greg},
+ number={v. 2},
+ series={The Architecture of Open Source Applications},
+ year={2012},
+ publisher={Kristian Hermansen}
 }
 
 @book{BW:TAOSA1,
-  title={The Architecture of Open Source Applications, Volume I},
-  author={Brown, Amy and Wilson, Greg},
-  number={v. 1},
-  series={The Architecture of Open Source Applications},
-  year={2011},
-  publisher={CreativeCommons}
+ title={The Architecture of Open Source Applications, Volume I},
+ author={Brown, Amy and Wilson, Greg},
+ number={v. 1},
+ series={The Architecture of Open Source Applications},
+ year={2011},
+ publisher={CreativeCommons}
 }
 
 @book{CBBGILMNS:DSA02,
-  title={Documenting Software Architectures: Views and Beyond},
-  author={Clements, Paul and Felix, Bachmann and Bass, Len and Garlan, David and Ivers, James and Little, Reed and Merson, Paulo  and Nord, Robert and Stafford, Judith},
-  year={2002},
-  publisher={Pearson Education},
+ title={Documenting Software Architectures: Views and Beyond},
+ author={Clements, Paul and Felix, Bachmann and Bass, Len and Garlan, David and Ivers, James and Little, Reed and Merson, Paulo  and Nord, Robert and Stafford, Judith},
+ year={2002},
+ publisher={Pearson Education},
 }
 
 @book{SG:SAPED96,
@@ -76,7 +88,70 @@ String{SV = "Springer-Verlag"}
  address = {Boston, MA, USA},
 }
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COLLECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@incollection{H:PCD02,
+ author = {Hoare, C. A. R.},
+ chapter = {Proof of Correctness of Data Representations},
+ title = {Software Pioneers},
+ editor = {Broy, Manfred and Denert, Ernst},
+ year = {2002},
+ isbn = {3-540-43081-4},
+ pages = {385--396},
+ numpages = {12},
+ url = {http://dl.acm.org/citation.cfm?id=944331.944356},
+ acmid = {944356},
+ publisher = SVNY,
+ address = SVNYAddr,
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% JOURNAL ARTICLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{BS:BCS11,
+ author = {Bell, Gordon and Siewiorek, Daniel P.},
+ title = {The Book Computer Structures: Thoughts After 40 Years},
+ journal = {IEEE Ann. Hist. Comput.},
+ issue_date = {April 2011},
+ volume = {33},
+ number = {2},
+ month = apr,
+ year = {2011},
+ issn = {1058-6180},
+ pages = {89--95},
+ numpages = {7},
+ url = {http://dx.doi.org/10.1109/MAHC.2011.47},
+ doi = {10.1109/MAHC.2011.47},
+ acmid = {1990824},
+ publisher = {IEEE Educational Activities Department},
+ address = IEEEPressAddr,
+ keywords = {history of computing, Carnegie Mellon University, PMS, ISP, Bell's law, the computer artifact classification, Computer Structures, Computer History Museum},
+}
+
+@article{S:PI80,
+  title={The impact of abstraction concerns on modern programming languages},
+  author={Shaw, Mary},
+  journal={Proceedings of the IEEE},
+  volume={68},
+  number={9},
+  pages={1119--1130},
+  year={1980},
+  publisher={IEEE}
+}
+
+@article{H:AI72,
+ author = {Hoare, C. A. R.},
+ title = {Proof of correctness of data representations},
+ journal = {Acta Informatica},
+ year = {1972},
+ month = {12},
+ volume = {1},
+ number = {4},
+ pages = {271--281},
+ issn = {1432-0525},
+ doi = {10.1007/BF00289507},
+ url = {http://dx.doi.org/10.1007/BF00289507},
+}
+
 @article{BGS:SoSyM14,
  author = {Barnes, Jeffrey M. and Garlan, David and Schmerl, Bradley},
  title = {Evolution Styles: Foundations and Models for Software Architecture Evolution},
@@ -95,7 +170,7 @@ String{SV = "Springer-Verlag"}
  publisher = SVNY,
  address = {SVNJAddr},
  keywords = {Software architecture},
-} 
+}
 
 @article{SAGKY:TSE06,
  author = {Schmerl, Bradley and Aldrich, Jonathan and Garlan, David and Kazman, Rick and Yan, Hong},
@@ -115,7 +190,7 @@ String{SV = "Springer-Verlag"}
  publisher = IEEEPress,
  address = IEEEPressAddr,
  keywords = {Software architecture discovery, Software architecture discovery, reverse engineering, architecture design tools and analyses., architecture design tools and analyses., reverse engineering},
-} 
+}
 
 @article{GCSHSS:C04,
  author = {Garlan, David and Cheng, Shang-Wen and Huang, An-Cheng and Schmerl, Bradley and Steenkiste, Peter},
@@ -134,7 +209,7 @@ String{SV = "Springer-Verlag"}
  acmid = {1032348},
  publisher = IEEECSP,
  address = IEEEAddr,
-} 
+}
 
 @article{GAO:IEEESoftware95,
  author = {Garlan, David and Allen, Robert and Ockerbloom, John},
@@ -153,8 +228,7 @@ String{SV = "Springer-Verlag"}
  acmid = {625526},
  publisher = IEEECSP,
  address = IEEEAddr,
-} 
-
+}
 
 @article{MRZWWW:IEEESoftware05,
  author = {Maranzano, Joseph F. and Rozsypal, Sandra A. and Zimmerman, Gus H. and Warnken, Guy W. and Wirth, Patricia E. and Weiss, David M.},
@@ -289,6 +363,40 @@ String{SV = "Springer-Verlag"}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{MPS:ULSSIS08,
+ author = {M\"{u}ller, Hausi and Pezz\`{e}, Mauro and Shaw, Mary},
+ title = {Visibility of Control in Adaptive Systems},
+ booktitle = {Proceedings of the International Workshop on Ultra-Large-Scale Software-Intensive Systems (ULSSIS)},
+ year = {2008},
+ month = {may},
+ isbn = {978-1-60558-026-5},
+ location = {Leipzig, Germany},
+ pages = {23--26},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/1370700.1370707},
+ doi = {10.1145/1370700.1370707},
+ acmid = {1370707},
+ publisher = ACM,
+ address = ACMAddr,
+ keywords = {autonomic systems, continuous evolution, self-adaptive systems, software ecosystems, ultra-large scale systems},
+}
+
+@inproceedings{PCW:ICSE84,
+ author = {Parnas, D. L. and Clements, P. C. and Weiss, D. M.},
+ title = {The Modular Structure of Complex Systems},
+ booktitle = ICSE,
+ year = {1984},
+ isbn = {0-8186-0528-6},
+ location = {Orlando, FL, USA},
+ pages = {408--417},
+ numpages = {10},
+ url = {http://dl.acm.org/citation.cfm?id=800054.801999},
+ acmid = {801999},
+ publisher = IEEEPress,
+ address = IEEEPressAddr,
+ month = {March},
+}
+
 @inproceedings{GDRS:LSCIS12,
  author = {Garlan, David and Dwivedi, Vishal and Ruchkin, Ivan and Schmerl, Bradley},
  title = {Foundations and Tools for End-user Architecting},
@@ -304,7 +412,7 @@ String{SV = "Springer-Verlag"}
  publisher = SV,
  address = SVBAddr,
  keywords = {end-user architecting, end-user architecture, end-user programming, software architecture, software composition, software development tools},
-} 
+}
 
 @inproceedings{BKGS:ICCPS11, 
  author = {Bhave, Ajinkya and Krogh, Bruce and Garlan, David and Schmerl, Bradley}, 
@@ -324,7 +432,6 @@ String{SV = "Springer-Verlag"}
  author = {Allen, Robert and Garlan, David},
  title = {Formalizing Architectural Connection},
  booktitle = ICSE,
-% series = {ICSE '94},
  year = {1994},
  month = {5},
  isbn = {0-8186-5855-X},
@@ -335,14 +442,13 @@ String{SV = "Springer-Verlag"}
  acmid = {257745},
  publisher = IEEECSP,
  address = IEEEAddr,
-} 
+}
 
 
 @inproceedings{GS:SCS06,
  author = {Garlan, David and Schmerl, Bradley},
  title = {Architecture-driven Modelling and Analysis},
  booktitle = {Proceedings on Safety Critical Systems and Software (SCS)},
-% series = {SCS '06},
  month = {8}, 
  year = {2006},
  isbn = {1-920-68250-3},
@@ -360,7 +466,6 @@ String{SV = "Springer-Verlag"}
  author = {Garlan, David},
  title = {Software Architecture: A Travelogue},
  booktitle = FOSE,
-% series = {FOSE 2014},
  year = {2014},
  month = {6},
  isbn = {978-1-4503-2865-4},
