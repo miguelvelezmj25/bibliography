@@ -23,6 +23,7 @@
 @String{SVNJAddr = "Secaucus, NJ, USA"}
 @String{SVBAddr = "Berlin/Heidelberg, Germany"}
 @String{SVNYAddr  = "New York, NY, USA"}
+@String{MITAddr  = "Cambridge, MA, USA"}
 
 % Publishers
 @String{ACM = "ACM"}
@@ -31,9 +32,36 @@
 @String{ENHI = "Elsevier North-Holland, Inc."}
 @String{IEEECSP = "IEEE Computer Society Press"}
 @String{SVNY = "Springer-Verlag New York, Inc."}
-String{SV = "Springer-Verlag"}
+@String{SV = "Springer-Verlag"}
+@String{MIT = "MIT Press"}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BOOKS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@book{B:DDECS10,
+ author = {Brooks, Frederick P.},
+ title = {The Design of Design: Essays from a Computer Scientist},
+ year = {2010},
+ isbn = {0201362988, 9780201362985},
+ edition = {1st},
+ publisher = {Addison-Wesley Professional},
+} 
+
+@book{FSWGGLLKKNS:ULSSSCF06,
+ title = {Ultra-Large-Scale Systems: The Software Challenge of the Future},
+ author={Feiler, Peter and Sullivan, Kevin and Wallnau, Kurt and Gabriel, Richard and Goodenough, John and Linger, Richard and Longstaff, Thomas and Kazman, Rick and Klein, Mark and Northrop, Linda and Schmidt, Douglas},
+ year={2006},
+ publisher={Software Engineering Institute, Carnegie Mellon University},
+}
+
+@book{S:SA96,
+ author = {Simon, Herbert A.},
+ title = {The Sciences of the Artificial (3rd Ed.)},
+ year = {1996},
+ isbn = {0-262-69191-4},
+ publisher = MIT,
+ address = MITAddr,
+}
+
 @book{SBN:CS87,
  title={Computer structures: principles and examples},
  author={Siewiorek, Daniel P. and Bell, C. Gordon and Newell, Allen},
@@ -89,7 +117,19 @@ String{SV = "Springer-Verlag"}
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COLLECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PART OF BOOKS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inbook{S:RDS13,
+ author = {Shaw, Mary},
+ title = {The Role of Design Spaces},
+ booktitle = {Software Designers in Action: A Human-Centric Look at Design Work},
+ year = {2013},
+ publisher = {CRC Press},
+ isbn = {9781466501096},
+ bookauthor = {Petre, Marian and van der Hoek, Andr{\'e}}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PART OF COLLECTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 @incollection{H:PCD02,
  author = {Hoare, C. A. R.},
  chapter = {Proof of Correctness of Data Representations},
@@ -107,6 +147,19 @@ String{SV = "Springer-Verlag"}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% JOURNAL ARTICLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{RW:PS73,
+ author = {Rittel, Horst W. J. and Webber, Melvin M.},
+ title = {Dilemmas in a general theory of planning},
+ journal = {Policy Sciences},
+ year = {1973},
+ volume = {4},
+ number = {2},
+ pages = {155--169},
+ issn = {1573-0891},
+ doi = {10.1007/BF01405730},
+ url = {http://dx.doi.org/10.1007/BF01405730},
+}
+
 @article{BS:BCS11,
  author = {Bell, Gordon and Siewiorek, Daniel P.},
  title = {The Book Computer Structures: Thoughts After 40 Years},
