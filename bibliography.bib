@@ -4,23 +4,26 @@
 
 @String{ACMAddr  = "New York, NY, USA"}
 @String{ACMPress = "ACM Press"}
-@String{CACM = "Commun.\ ACM"}
+@String{CACM          = {Commun. ACM}}
 @String{ENHI = "Elsevier North-Holland, Inc."}
 @String{ENHIAddr = "Amsterdam, The Netherlands"}
-@String{ESECFSE       = {Proc.\ Europ.\ Software Engineering Conf.\ Foundations of Software Engineering (ESEC/FSE)}}
+@String{ESECFSE       = {Proc. Europ. Software Engineering Conf. Foundations of Software Engineering (ESEC/FSE)}}
 @String{FOSE = "Proceedings of the on Future of Software Engineering (FOSE)"}
-@String{GPCE          = {Proc.\ Int'l Conf.\ Generative and Component-Based Software Engineering (GCSE)}}
+@String{GPCE          = {Proc. Int'l Conf. Generative and Component-Based Software Engineering (GCSE)}}
 @String{ICCPS = "International Conference on Cyber-Physical Systems (ICCPS)"}
 @String{ICRS = "Proceedings of the International Conference on Reliable Software"}
-@String{ICSE = "Proc.\ Int'l Conf.\ Software Engineering (ICSE)"}
+@String{ICSE = "Proc. Int'l Conf. Software Engineering (ICSE)"}
+@String{IEEE          = {IEEE Computer Society}}
 @String{IEEEAddr = "Los Alamitos, CA, USA"}
+@String{IEEEAddrW     = {Washington, DC, USA}}
 @String{IEEECSP = "IEEE Computer Society Press"}
 @String{IEEEPress = "IEEE Press"}
 @String{IEEEPressAddr = "Piscataway, NJ, USA"}
 @String{IEEESoftware	= "IEEE Softw."}
 @String{MIT = "MIT Press"}
 @String{MITAddr  = "Cambridge, MA, USA"}
-@String{OOPSLA = "Proc.\ Int'l Conf.\ Object-Oriented Programming, Systems, Languages and Applications (OOPSLA)"}
+@String{OOPSLA = "Proc. Int'l Conf. Object-Oriented Programming, Systems, Languages and Applications (OOPSLA)"}
+@String{RE            = {Proc. Int'l Requirements Engineering Conf. (RE)}}
 @String{SCP = "Sci. Comput. Program."}
 @String{SIGPLANNOT = "SIGPLAN Notices"}
 @String{SoSyM = "Softw. Syst. Model. (SoSyM)"}
@@ -29,7 +32,7 @@
 @String{SVNJAddr = "Secaucus, NJ, USA"}
 @String{SVNY = "Springer-Verlag New York, Inc."}
 @String{SVNYAddr  = "New York, NY, USA"}
-@String{TSE  = "IEEE Trans.\ Softw.\ Eng. (TSE)"}
+@String{TSE  = "IEEE Trans. Softw. Eng. (TSE)"}
 
 @Book{B:DDECS10,
   author    = {Brooks, Frederick P.},
@@ -653,7 +656,7 @@
   booktitle = GPCE,
   year      = {2013},
   publisher = ACM,
-  location  = {Indianapolis, Indiana, USA},
+  location  = {Indianapolis, IN, USA},
   isbn      = {978-1-4503-2373-4},
   pages     = {95-104},
   doi       = {10.1145/2517208.2517209},
@@ -711,6 +714,48 @@
   url       = {http://dx.doi.org/10.1109/ICSE.2009.5070532},
   address   = IEEEAddr,
   numpages  = {11},
+}
+
+@InProceedings{GF:RE95,
+  author    = {Gotel, Orlena and Finkelstein, Anthony},
+  title     = {Contribution Structures},
+  booktitle = RE,
+  year      = {1995},
+  publisher = IEEE,
+  location  = {York, U.K.},
+  isbn      = {0-8186-7017-7},
+  pages     = {100--107},
+  url       = {http://dl.acm.org/citation.cfm?id=827254.827801},
+  address   = IEEEAddrW,
+}
+
+@InProceedings{J:ICSE95,
+  author    = {Jackson, Michael},
+  title     = {The World and the Machine},
+  booktitle = ICSE,
+  year      = {1995},
+  publisher = ACM,
+  location  = {Seattle, WA, USA},
+  isbn      = {0-89791-708-1},
+  pages     = {283--292},
+  doi       = {10.1145/225014.225041},
+  url       = {http://doi.acm.org/10.1145/225014.225041},
+  address   = ACMAddr,
+  numpages  = {10},
+}
+
+@InProceedings{PN:RE97,
+  author    = {Potts, Colin and Newstetter, Wendy C.},
+  title     = {Naturalistic Inquiry and Requirements Engineering: Reconciling Their Theoretical Foundations},
+  booktitle = RE,
+  year      = {1997},
+  publisher = IEEE,
+  location  = {Annapolis, MD, USA},
+  isbn      = {0-8186-7740-6},
+  pages     = {118--127},
+  url       = {http://dl.acm.org/citation.cfm?id=827255.827832},
+  address   = IEEEAddrW,
+  keywords  = {formal specification, requirements engineering, naturalistic inquiry, ethnography, social and contextual factors},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
