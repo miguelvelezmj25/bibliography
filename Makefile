@@ -1,3 +1,5 @@
+file = MWE
+
 generate-pdf: 
 	@make latex-clean
 	@make latex-pdf
@@ -8,12 +10,12 @@ generate-pdf:
 
 latex-clean:
 	@echo "############################# Cleaning latex files #############################"
-	latexmk -c MWE
+	latexmk -c ${file}
 
 latex-pdf:
 	@echo "\n############################# pdflatex  #############################" 
-	pdflatex MWE
+	pdflatex ${file}
 
 latex-biber:
 	@echo "\n############################# biber #############################"
-	biber MWE
+	biber ${file}
