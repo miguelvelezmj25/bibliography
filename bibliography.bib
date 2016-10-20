@@ -5,6 +5,8 @@
 @String{ACMAddr  = "New York, NY, USA"}
 @String{ACMPress = "ACM Press"}
 @String{ASE           = {Proc. Int'l Conf. Automated Software Engineering (ASE)}}
+@String{AWL           = {Addison-Wesley}}
+@String{AWLAddr       = {Boston, MA, USA}}
 @String{CACM          = {Commun. ACM}}
 @String{CSCW          = {Proc. Conf. Computer Supported Cooperative Work (CSCW)}}
 @String{ENHI = "Elsevier North-Holland, Inc."}
@@ -15,6 +17,7 @@
 @String{ICCPS = "International Conference on Cyber-Physical Systems (ICCPS)"}
 @String{ICRS = "Proceedings of the International Conference on Reliable Software"}
 @String{ICSE = "Proc. Int'l Conf. Software Engineering (ICSE)"}
+@String{ICSR          = {Proc. Int'l Conf. Software Reuse (ICSR)}}
 @String{IEEE          = {IEEE Computer Society}}
 @String{IEEEAddr = "Los Alamitos, CA, USA"}
 @String{IEEEAddrW     = {Washington, DC, USA}}
@@ -132,6 +135,7 @@
   year      = {2006},
   volume    = {21},
   number    = {1},
+  month     = {12},
   pages     = {103--152},
   journal   = {Human--Computer Interaction},
   publisher = {Taylor \& Francis},
@@ -143,6 +147,7 @@
   year    = {1973},
   volume  = {4},
   number  = {2},
+  month   = {6},
   pages   = {155--169},
   issn    = {1573-0891},
   doi     = {10.1007/BF01405730},
@@ -176,6 +181,7 @@
   year      = {1980},
   volume    = {68},
   number    = {9},
+  month     = {4},
   pages     = {1119--1130},
   journal   = {Proceedings of the IEEE},
   publisher = {IEEE},
@@ -1021,6 +1027,123 @@
   url       = {http://doi.acm.org/10.1145/2145204.2145396},
   address   = AMCAddr,
   numpages  = {10},
+}
+
+@Article{D:CSCW05,
+  author     = {Ducheneaut, Nicolas},
+  title      = {Socialization in an Open Source Software Community: A Socio-Technical Analysis},
+  year       = {2005},
+  volume     = {14},
+  number     = {4},
+  month      = aug,
+  pages      = {323--368},
+  issn       = {0925-9724},
+  doi        = {10.1007/s10606-005-9000-1},
+  url        = {http://dx.doi.org/10.1007/s10606-005-9000-1},
+  address    = {Norwell, MA, USA},
+  issue_date = {August 2005},
+  journal    = {Comput. Supported Coop. Work},
+  keywords   = {Open Source, actor-network, learning, socialization, software development},
+  numpages   = {46},
+  publisher  = {Kluwer Academic Publishers},
+}
+
+@Article{B:C87,
+  author     = {Brooks,Jr., Frederick P.},
+  title      = {No Silver Bullet Essence and Accidents of Software Engineering},
+  year       = {1987},
+  volume     = {20},
+  number     = {4},
+  month      = apr,
+  pages      = {10--19},
+  issn       = {0018-9162},
+  doi        = {10.1109/MC.1987.1663532},
+  url        = {http://dx.doi.org/10.1109/MC.1987.1663532},
+  address    = IEEEAddr,
+  issue_date = {April 1987},
+  journal    = {Computer},
+  numpages   = {10},
+  publisher  = IEEECSP,
+}
+
+@Book{NR:NATO69,
+  author = {Naur, Peter and Randell, Brian},
+  title  = {Software Engineering: Report of a Conference Sponsored by the NATO Science Committee, Garmisch, Germany, 7-11 Oct. 1968, Brussels, Scientific Affairs Division, NATO},
+  year   = {1969},
+}
+
+@InProceedings{B:ICSR94,
+  author    = {Ted Biggerstaff},
+  title     = {The Library Scaling Problem and the Limits of Concrete Component Reuse},
+  booktitle = ICSR,
+  year      = {1994},
+  publisher = IEEE,
+  location  = {Rio de Janeiro, Brazil},
+  pages     = {102--109},
+  address   = IEEEAddr,
+}
+
+@Book{ABKS:FOSPL13,
+  author    = {Apel, Sven and Batory,Don and K{\"a}stner, Christian and Saake, Gunter},
+  title     = {Feature-Oriented Software Product Lines: Concepts and Implementation},
+  year      = {2013},
+  publisher = SV,
+  isbn      = {978-3-642-37520-0},
+  address   = SVBAddr,
+}
+
+@Article{P:TSE79,
+  author    = {Parnas, David L.},
+  title     = {Designing Software for Ease of Extension and Contraction},
+  year      = {1979},
+  volume    = {SE-5},
+  number    = {2},
+  month     = mar,
+  pages     = {128--138},
+  issn      = {0098-5589},
+  address   = IEEEPressAddr,
+  journal   = TSE,
+  publisher = IEEEPress,
+}
+
+@Book{B:MMM95,
+  author    = {Brooks, Jr., Frederick P.},
+  title     = {The Mythical Man-Month},
+  year      = {1995},
+  edition   = {anniversary},
+  publisher = AWL,
+  isbn      = {0-201-83595-9},
+  address   = AWLAddr,
+}
+
+@Book{C:CS02,
+  author    = {Clemens Szyperski},
+  title     = {Component Software: Beyond Object-Oriented Programming},
+  year      = {2002},
+  edition   = {2nd},
+  publisher = AWL,
+  isbn      = {0201745720},
+  address   = AWLAddr,
+}
+
+@Book{CE:GP00,
+  author    = {Czarnecki, Krzysztof and Eisenecker, Ulrich},
+  title     = {Generative Programming: Methods, Tools, and Applications},
+  year      = {2000},
+  publisher = {ACM Press/Addison-Wesley},
+  isbn      = {0-201-30977-7},
+  address   = ACMAddr,
+}
+
+@Article{JF:JOOP88,
+  author  = {Johnson, Ralph and Foote, Brian},
+  title   = {Designing Reusable Classes},
+  year    = {1988},
+  volume  = {1},
+  number  = {5},
+  month   = jun,
+  pages   = {22-35},
+  journal = {Journal of Object-Oriented Programming SIGS},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
