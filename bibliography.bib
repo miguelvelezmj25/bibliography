@@ -683,26 +683,6 @@
   address   = ACMAddr,
   keywords  = {rank4},
   numpages  = {10},
-  review    = {I liked how they were able to get the performance model for the entire system with all the interactions. Based 
-on a valid feature selection, the model computes the performance 
-value by removing all terms that do not contain any feature in the 
-selection; then, the sum of the times of the remaining terms represents 
-the performance value of the corresponding program variant.
-
-- They wanted to find which feature selection yields the optimal performance. They did this by measuring time. We could explore other metrics besides time. For example, we can consider cpu utilization because time is might not be directly correlated with cpu usage. We could create different performance models based on different stakeholders. 
--- Time
--- CPU utilization
--- Code complexity? Maybe figure out how complicated code is and how difficult it would be to update/refactor? I am thinking about difficulty to understand and modify code, similar to info hiding.
--- Localization error (Robot)
--- Flexibily? How many features are offered by a given invariant?
--- Parallelizing?
--- Load balancing?
-
-- They are limiting to feature oriented programs and do not consider data-flow analysis. This might be something that we could explore.
-
-- Could we use the idea from the ICSE paper I reviewed about performance measurement of smaller parts of the code?
-
-- What I am most interested is in analyzing the entering system and giving the user an indication of the performance of the system based on configurations. This could be done based on different points of view. It could be where the code is taking the longest, what part is consuming the most cpu, how are time and cpu usage related. This could be use as a starting point for measure, more hands on measurement of individual configurations.},
 }
 
 @InProceedings{EHMG:ESECFSE15,
