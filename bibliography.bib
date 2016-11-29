@@ -5,6 +5,7 @@
 @String{ACMAddr  = "New York, NY, USA"}
 @String{ACMPress = "ACM Press"}
 @String{ASE           = {Proc. Int'l Conf. Automated Software Engineering (ASE)}}
+@String{ASPLOS        = {Proc. Int'l Conf. Architectural Support for Programming Languages and Operating Systems (ASPLOS)}}
 @String{AWL           = {Addison-Wesley}}
 @String{AWLAddr       = {Boston, MA, USA}}
 @String{CACM          = {Commun. ACM}}
@@ -26,6 +27,7 @@
 @String{IEEEPress = "IEEE Press"}
 @String{IEEEPressAddr = "Piscataway, NJ, USA"}
 @String{IEEESoftware	= "IEEE Softw."}
+@String{ISSTA         = {Proc. Int'l Symp. Software Testing and Analysis (ISSTA)}}
 @String{ITHINGS       = {Proc. Int'l Conf. on Internet of Things (iThings)}}
 @String{MIT = "MIT Press"}
 @String{MITAddr  = "Cambridge, MA, USA"}
@@ -34,6 +36,7 @@
 @String{RE            = {Proc. Int'l Requirements Engineering Conf. (RE)}}
 @String{SCP = "Sci. Comput. Program."}
 @String{SIGPLANNOT = "SIGPLAN Notices"}
+@String{SIGSOFTNotes  = {SIGSOFT Softw. Eng. Notes}}
 @String{SoSyM = "Softw. Syst. Model. (SoSyM)"}
 @String{SV = "Springer-Verlag"}
 @String{SVBAddr = "Berlin/Heidelberg, Germany"}
@@ -1345,7 +1348,7 @@
   issn       = {0018-9162},
   doi        = {10.1109/2.59},
   url        = {http://dx.doi.org/10.1109/2.59},
-  address    = IEEAddr,
+  address    = IEEEAddr,
   issue_date = {May 1988},
   journal    = {Computer},
   numpages   = {12},
@@ -1596,7 +1599,7 @@
   year      = {1997},
   edition   = {1},
   publisher = {McGraw-Hill, Inc.},
-  isbn      = {0070428077, 9780070428072},
+  isbn      = {0070428077},
   address   = {New York, NY, USA},
 }
 
@@ -1605,7 +1608,7 @@
   title     = {The Art of Multiprocessor Programming},
   year      = {2008},
   publisher = {Morgan Kaufmann Publishers Inc.},
-  isbn      = {0123705916, 9780123705914},
+  isbn      = {0123705916},
   address   = {San Francisco, CA, USA},
 }
 
@@ -1614,7 +1617,7 @@
   title     = {Machine Learning: A Probabilistic Perspective},
   year      = {2012},
   publisher = MIT,
-  isbn      = {0262018020, 9780262018029},
+  isbn      = {0262018020},
 }
 
 @Book{ST:DPENPOOD02,
@@ -1650,8 +1653,253 @@
   year      = {2011},
   edition   = {3rd},
   publisher = {Morgan Kaufmann Publishers Inc.},
-  isbn      = {0123748569, 9780123748560},
+  isbn      = {0123748569},
   address   = {San Francisco, CA, USA},
+}
+
+@Article{CES:ACMTPLS86,
+  author     = {Clarke, E. M. and Emerson, E. A. and Sistla, A. P.},
+  title      = {Automatic Verification of Finite-state Concurrent Systems Using Temporal Logic Specifications},
+  year       = {1986},
+  volume     = {8},
+  number     = {2},
+  month      = {April},
+  pages      = {244--263},
+  issn       = {0164-0925},
+  doi        = {10.1145/5397.5399},
+  url        = {http://doi.acm.org/10.1145/5397.5399},
+  address    = ACMAddr,
+  issue_date = {April 1986},
+  journal    = {ACM Trans. Program. Lang. Syst.},
+  numpages   = {20},
+  publisher  = ACM,
+}
+
+@InProceedings{HJMS:POPL02,
+  author    = {Henzinger, Thomas A. and Jhala, Ranjit and Majumdar, Rupak and Sutre, Gr{\'e}goire},
+  title     = {Lazy Abstraction},
+  booktitle = POPL,
+  year      = {2002},
+  publisher = ACM,
+  location  = {Portland, OR, USA},
+  month     = {January},
+  isbn      = {1-58113-450-9},
+  pages     = {58--70},
+  doi       = {10.1145/503272.503279},
+  url       = {http://doi.acm.org/10.1145/503272.503279},
+  address   = ACMAddr,
+  numpages  = {13},
+}
+
+@Article{AHMPP:IEEESoftware08,
+  author     = {Ayewah, Nathaniel and Hovemeyer, David and Morgenthaler, J. David and Penix, John and Pugh, William},
+  title      = {Using Static Analysis to Find Bugs},
+  year       = {2008},
+  volume     = {25},
+  number     = {5},
+  month      = {September},
+  pages      = {22--29},
+  issn       = {0740-7459},
+  doi        = {10.1109/MS.2008.130},
+  url        = {http://dx.doi.org/10.1109/MS.2008.130},
+  address    = IEEEAddr,
+  issue_date = {September 2008},
+  journal    = IEEESoftware,
+  numpages   = {8},
+  publisher  = IEEECSP,
+}
+
+@InProceedings{W:ICSE81,
+  author    = {Weiser, Mark},
+  title     = {Program Slicing},
+  booktitle = ICSE,
+  year      = {1981},
+  publisher = IEEEPress,
+  location  = {San Diego, CA, USA},
+  month     = {March},
+  isbn      = {0-89791-146-6},
+  pages     = {439--449},
+  url       = {http://dl.acm.org/citation.cfm?id=800078.802557},
+  address   = IEEEPressAddr,
+  numpages  = {11},
+}
+
+@Article{BBCCFHHKME:CACM10,
+  author     = {Bessey, Al and Block, Ken and Chelf, Ben and Chou, Andy and Fulton, Bryan and Hallem, Seth and Henri-Gros, Charles and Kamsky, Asya and McPeak, Scott and Engler, Dawson},
+  title      = {A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World},
+  year       = {2010},
+  volume     = {53},
+  number     = {2},
+  month      = {February},
+  pages      = {66--75},
+  issn       = {0001-0782},
+  doi        = {10.1145/1646353.1646374},
+  url        = {http://doi.acm.org/10.1145/1646353.1646374},
+  acmid      = {1646374},
+  address    = ACMAddr,
+  issue_date = {February 2010},
+  journal    = CACM,
+  numpages   = {10},
+  publisher  = ACM,
+}
+
+@InProceedings{BR:SPIN01,
+  author    = {Ball, Thomas and Rajamani, Sriram K.},
+  title     = {Automatically Validating Temporal Safety Properties of Interfaces},
+  booktitle = {Proc. Int'l Workshop on Model Checking of Software (SPIN)},
+  year      = {2001},
+  publisher = SVNY,
+  location  = {Toronto, Canada},
+  month     = {May},
+  isbn      = {3-540-42124-6},
+  pages     = {103--122},
+  url       = {http://dl.acm.org/citation.cfm?id=380921.380932},
+  address   = SVNYAddr,
+  numpages  = {20},
+}
+
+@InProceedings{ECGN:ICSE99,
+  author    = {Ernst, Michael D. and Cockrell, Jake and Griswold, William G. and Notkin, David},
+  title     = {Dynamically Discovering Likely Program Invariants to Support Program Evolution},
+  booktitle = ICSE,
+  year      = {1999},
+  publisher = ACM,
+  location  = {Los Angeles, CA, USA},
+  month     = {May},
+  isbn      = {1-58113-074-0},
+  pages     = {213--224},
+  doi       = {10.1145/302405.302467},
+  url       = {http://doi.acm.org/10.1145/302405.302467},
+  address   = ACMAddr,
+  numpages  = {12},
+}
+
+@InProceedings{PO:ISSTA11,
+  author    = {Parnin, Chris and Orso, Alessandro},
+  title     = {Are Automated Debugging Techniques Actually Helping Programmers?},
+  booktitle = ISSTA,
+  year      = {2011},
+  publisher = ACM,
+  location  = {Toronto, Canada},
+  month     = {July},
+  isbn      = {978-1-4503-0562-4},
+  pages     = {199--209},
+  doi       = {10.1145/2001420.2001445},
+  url       = {http://doi.acm.org/10.1145/2001420.2001445},
+  address   = ACMAddr,
+  numpages  = {11},
+}
+
+@Article{Z:SIGSOFTNotes99,
+  author     = {Zeller, Andreas},
+  title      = {Yesterday, My Program Worked. Today, It Does Not. Why?},
+  year       = {1999},
+  volume     = {24},
+  number     = {6},
+  month      = {October},
+  pages      = {253--267},
+  issn       = {0163-5948},
+  doi        = {10.1145/318774.318946},
+  url        = {http://doi.acm.org/10.1145/318774.318946},
+  address    = ACMAddr,
+  issue_date = {November 1999},
+  journal    = SIGSOFTNotes,
+  numpages   = {15},
+  publisher  = ACM,
+}
+
+@InProceedings{P:ICSE78,
+  author    = {Parnas, David L.},
+  title     = {Designing Software for Ease of Extension and Contraction},
+  booktitle = ICSE,
+  year      = {1978},
+  publisher = IEEEPress,
+  location  = {Atlanta, GA, USA},
+  month     = {May},
+  pages     = {264--277},
+  url       = {http://dl.acm.org/citation.cfm?id=800099.803218},
+  address   = IEEEPressAddr,
+  numpages  = {14},
+}
+
+@InProceedings{HLHG:ICSE13,
+  author    = {Hao, Shuai and Li, Ding and Halfond, William G. J. and Govindan, Ramesh},
+  title     = {Estimating Mobile Application Energy Consumption Using Program Analysis},
+  booktitle = ICSE,
+  year      = {2013},
+  publisher = IEEEPress,
+  location  = {San Francisco, CA, USA},
+  month     = {May},
+  isbn      = {978-1-4673-3076-3},
+  pages     = {92--101},
+  url       = {http://dl.acm.org/citation.cfm?id=2486788.2486801},
+  address   = IEEEPressAddr,
+  numpages  = {10},
+}
+
+@InProceedings{HPHL:ICSE15,
+  author    = {Henard, Christopher and Papadakis, Mike and Harman, Mark and Le Traon, Yves},
+  title     = {Combining Multi-objective Search and Constraint Solving for Configuring Large Software Product Lines},
+  booktitle = ICSE,
+  year      = {2015},
+  publisher = IEEEPress,
+  location  = {Florence, Italy},
+  month     = {May},
+  isbn      = {978-1-4799-1934-5},
+  pages     = {517--528},
+  url       = {http://dl.acm.org/citation.cfm?id=2818754.2818819},
+  address   = IEEEPressAddr,
+  numpages  = {12},
+}
+
+@Article{SRKKAS:SQJ12,
+  author     = {Siegmund, Norbert and Rosenm\"{u}ller, Marko and Kuhlemann, Martin and K\"{a}stner, Christian and Apel, Sven and Saake, Gunter},
+  title      = {SPL Conqueror: Toward Optimization of Non-functional Properties in Software Product Lines},
+  year       = {2012},
+  volume     = {20},
+  number     = {3-4},
+  month      = {September},
+  pages      = {487--517},
+  issn       = {0963-9314},
+  doi        = {10.1007/s11219-011-9152-9},
+  url        = {http://dx.doi.org/10.1007/s11219-011-9152-9},
+  address    = {Hingham, MA, USA},
+  issue_date = {September 2012},
+  journal    = {Software Quality Journal},
+  numpages   = {31},
+  publisher  = {Kluwer Academic Publishers},
+}
+
+@InProceedings{HSCMAR:ASPLOS11,
+  author    = {Hoffmann, Henry and Sidiroglou, Stelios and Carbin, Michael and Misailovic, Sasa and Agarwal, Anant and Rinard, Martin},
+  title     = {Dynamic Knobs for Responsive Power-aware Computing},
+  booktitle = ASPLOS,
+  year      = {2011},
+  publisher = ACM,
+  location  = {Newport Beach, CA, USA},
+  month     = {March},
+  isbn      = {978-1-4503-0266-1},
+  pages     = {199--212},
+  doi       = {10.1145/1950365.1950390},
+  url       = {http://doi.acm.org/10.1145/1950365.1950390},
+  address   = ACMAddr,
+  numpages  = {14},
+}
+
+@InProceedings{KMKBSBD:ESECFSE13,
+  author    = {Kim, Chang Hwan Peter and Marinov, Darko and Khurshid, Sarfraz and Batory, Don and Souto, Sabrina and Barros, Paulo and D\&\#039;Amorim, Marcelo},
+  title     = {SPLat: Lightweight Dynamic Analysis for Reducing Combinatorics in Testing Configurable Systems},
+  booktitle = ESECFSE,
+  year      = {2013},
+  publisher = ACM,
+  location  = {Saint Petersburg, Russia},
+  month     = {August},
+  isbn      = {978-1-4503-2237-9},
+  pages     = {257--267},
+  doi       = {10.1145/2491411.2491459},
+  url       = {http://doi.acm.org/10.1145/2491411.2491459},
+  address   = ACMAddr,
+  numpages  = {11},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
