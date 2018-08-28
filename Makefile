@@ -1,5 +1,5 @@
 file = MWE
- 
+    
 generate-pdf: 
 	@make latex-clean
 	@make latex-pdf
