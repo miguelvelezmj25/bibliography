@@ -1,4 +1,4 @@
-file = MWE
+file = bib-index
 
 generate-pdf: 
 	@make latex-clean
